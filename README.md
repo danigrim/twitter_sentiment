@@ -122,11 +122,9 @@ callbacks = [EarlyStopping(monitor='val_accuracy', patience=0)]
 nn_model.fit(X_train_seq, y_train, batch_size=128, epochs=12, validation_split=0.2, callbacks=callbacks)
 ```
 
-![screenshot](Screen_Shot_2021-02-25_at_12.52.49_PM.png)
+![screenshot](Screen_Shot_2021-02-11_at_8.28.02_PM (1).png)
 
-![screenshot](Screen Shot_2021-02-11_at_8.28.14_PM.png)
-
-![screenshot](Screen_Shot_2021-02-11_at_8.32.28_PM.png)
+![screenshot](Screen_Shot_2021-02-11_at_8.28.14_PM (2).png)
 
 Although we had reached similar accuracies with the logistic regression model, the NN model was way more consistent. With the logistic regression, every run through would give very different results. Also, the CountVectorizer for the logreg was problematic due to its runtime, this was improved with the NN. 
 
@@ -177,7 +175,7 @@ To make our model useful, we developed a Flask App to be run locally, where a us
 
 We developed a main page using HTML with W3-css properties, with a form where a user can input their topic of interest. On submission, the topic is registered 
 
-![screenshot](Screen_Shot_2021-02-24_at_5.52.10_PM.png)
+![screenshot](Screen_Shot_2021-02-25_at_12.31.33_PM.png)
 
 Once we have a topic, we use it as a query parameter in the Twitter Developer API (which we created an account for) 
 
@@ -238,7 +236,7 @@ def get_info():
 
 The resulting page: 
 
-![screenshot](
+![screenshot](Screen_Shot_2021-02-24_at_5.51.57_PM.png)
 
 ## Challenges and future works
 
