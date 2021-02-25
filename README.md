@@ -55,11 +55,11 @@ Now we can see a more clear distinguishment between positive/negative words in t
 
     **Negative tweet words**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/289df5d3-e5ba-4b59-b203-04369ebe63fa/Screen_Shot_2021-01-24_at_10.47.53_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/289df5d3-e5ba-4b59-b203-04369ebe63fa/Screen_Shot_2021-01-24_at_10.47.53_AM.png)
+![screenshot](screenshot.png)
 
-     **Positive tweet words**
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c18aa347-d67e-4f5e-a5d2-f6218e10643a/Screen_Shot_2021-01-24_at_11.06.24_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c18aa347-d67e-4f5e-a5d2-f6218e10643a/Screen_Shot_2021-01-24_at_11.06.24_AM.png)
+   **Positive tweet words**
+     
+![screenshot](![screenshot](Screen_Shot_2021-01-24_at_11.06.24_AM.png)
 
 We did the same demonstration for hashtags
 
