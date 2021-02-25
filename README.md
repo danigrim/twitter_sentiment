@@ -121,9 +121,10 @@ nn_model.summary()
 callbacks = [EarlyStopping(monitor='val_accuracy', patience=0)]
 nn_model.fit(X_train_seq, y_train, batch_size=128, epochs=12, validation_split=0.2, callbacks=callbacks)
 ```
-![screenshot](Screen Shot 2021-02-25 at 12.52.49 PM.png)
 
-![screenshot](Screen Shot 2021-02-11 at 8.28.14 PM.png)
+![screenshot](Screen_Shot_2021-02-25_at_12.52.49_PM.png)
+
+![screenshot](Screen Shot_2021-02-11_at_8.28.14_PM.png)
 
 ![screenshot](Screen_Shot_2021-02-11_at_8.32.28_PM.png)
 
@@ -176,7 +177,7 @@ To make our model useful, we developed a Flask App to be run locally, where a us
 
 We developed a main page using HTML with W3-css properties, with a form where a user can input their topic of interest. On submission, the topic is registered 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe981d21-211b-4ba5-ac2e-fd246948b54b/Screen_Shot_2021-02-25_at_12.31.33_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe981d21-211b-4ba5-ac2e-fd246948b54b/Screen_Shot_2021-02-25_at_12.31.33_PM.png)
+![screenshot](Screen_Shot_2021-02-24_at_5.52.10_PM.png)
 
 Once we have a topic, we use it as a query parameter in the Twitter Developer API (which we created an account for) 
 
@@ -237,7 +238,7 @@ def get_info():
 
 The resulting page: 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f3308142-1fa2-4206-83d0-83b65e4667bc/Screen_Shot_2021-02-24_at_5.51.57_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f3308142-1fa2-4206-83d0-83b65e4667bc/Screen_Shot_2021-02-24_at_5.51.57_PM.png)
+![screenshot](
 
 ## Challenges and future works
 
