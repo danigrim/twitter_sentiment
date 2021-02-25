@@ -48,23 +48,24 @@ Now we can see a more clear distinguishment between positive/negative words in t
 - We then carried out the same step to investigate most popular **hashtags** in Positive/Negative tweets.
 - We investigated the number of hashtags per tweet, but it seemed unrelated to the target
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4dc65be7-983d-4144-a6c5-bba87bb9e8ca/Screen_Shot_2021-01-24_at_10.31.23_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4dc65be7-983d-4144-a6c5-bba87bb9e8ca/Screen_Shot_2021-01-24_at_10.31.23_AM.png)
+![screenshot](Screen_Shot_2021-01-24_at_10.31.23_AM (1).png)
 
 - Next preprocessing step was to remove the english **stop words**
 - Once stop words were removed, we plotted a wordmap of the most popular words in positive and negative tweets
 
     **Negative tweet words**
 
-![screenshot](screenshot.png)
+![screenshot](Screen_Shot_2021-01-24_at_10.47.53_AM.png)
 
    **Positive tweet words**
      
-![screenshot](![screenshot](Screen_Shot_2021-01-24_at_11.06.24_AM.png)
+![screenshot](Screen_Shot_2021-01-24_at_11.06.24_AM.png)
 
-We did the same demonstration for hashtags
+**We did the same demonstration for hashtags**
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/97232d7a-6c6a-4284-8d9a-9861312e8746/Screen_Shot_2021-01-24_at_10.56.00_AM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/97232d7a-6c6a-4284-8d9a-9861312e8746/Screen_Shot_2021-01-24_at_10.56.00_AM.png)
+![screenshot](Screen_Shot_2021-01-24_at_10.56.00_AM.png)
 
+Screen_Shot_2021-01-24_at_10.56.00_AM.png
 The hashtags are insightful as they often relate to **contemporary events**. We can see for exapmple the clear negative feeling towards the **iran-election** 
 
 - Next, we **tokenized and lemmatized** words in tweets. We used the custom **tweet tokenizer** as it properly interprets special characters according to their meaning to tweets
@@ -120,12 +121,11 @@ nn_model.summary()
 callbacks = [EarlyStopping(monitor='val_accuracy', patience=0)]
 nn_model.fit(X_train_seq, y_train, batch_size=128, epochs=12, validation_split=0.2, callbacks=callbacks)
 ```
+![screenshot](Screen Shot 2021-02-25 at 12.52.49 PM.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/429e72fa-4e57-46fc-aec4-b871d962998c/Screen_Shot_2021-02-11_at_8.28.02_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/429e72fa-4e57-46fc-aec4-b871d962998c/Screen_Shot_2021-02-11_at_8.28.02_PM.png)
+![screenshot](Screen Shot 2021-02-11 at 8.28.14 PM.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dee9b7ab-3823-4d8e-8323-3e6fc9380ec6/Screen_Shot_2021-02-11_at_8.28.14_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dee9b7ab-3823-4d8e-8323-3e6fc9380ec6/Screen_Shot_2021-02-11_at_8.28.14_PM.png)
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58a36124-51fa-4563-8239-db17e560e640/Screen_Shot_2021-02-11_at_8.32.28_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/58a36124-51fa-4563-8239-db17e560e640/Screen_Shot_2021-02-11_at_8.32.28_PM.png)
+![screenshot](Screen_Shot_2021-02-11_at_8.32.28_PM.png)
 
 Although we had reached similar accuracies with the logistic regression model, the NN model was way more consistent. With the logistic regression, every run through would give very different results. Also, the CountVectorizer for the logreg was problematic due to its runtime, this was improved with the NN. 
 
